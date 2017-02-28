@@ -1,12 +1,38 @@
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
 #menu {
     border-left: 2px solid grey;
     background-color: PINK;
+}
+.menu-wrap {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+.menu-wrap> ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.menu-li-page-links,
+.menu-li-contact-links {
+    margin: 1vh 0 1vh 0; 
+}
+.main{
+    width: 99%;
 }
 #burger {
   float: right;
   position: fixed;
   top: -10%; 
-  right: 10%;
+  right: 12%;
   background: none;
   border: none;
   font-size: 2em;
@@ -78,10 +104,12 @@ a {
   bottom: 0;
   width: 256px;
   min-height: 100vh;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 0;
   display: none;
 }
+
 .slideout-menu-left {
   left: 0;
 }
@@ -95,7 +123,7 @@ a {
   z-index: 1;
   will-change: transform;
   background-color: #FFF; /* A background-color is required */
-  min-height: 70vh;
+  min-height: 100vh;
 }
 
 .slideout-open,
@@ -106,20 +134,4 @@ a {
 
 .slideout-open .slideout-menu {
   display: block;
-}
-
-.panel:before {
-  content: '';
-  display: block;
-  background-color: rgba(0,0,0,0);
-  transition: background-color 0.5s ease-in-out;
-}
-
-.panel-open:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(0,0,0,.5);
-  z-index: 99;
 }
