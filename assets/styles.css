@@ -1,75 +1,77 @@
-
+#menu {
+    border-left: 2px solid grey;
+    background-color: PINK;
+}
 #burger {
   float: right;
+  position: fixed;
+  top: -10%; 
+  right: 10%;
+  background: none;
+  border: none;
+  font-size: 2em;
 }
 
-a {
-    text-decoration: none;
-}
-h1 {
-    font-size: 2em;
-     margin: 0;
-}
-h4 {
-      font-size: 1.4em;
-      margin: 0;
-      color: grey;
-}
 .main-wrap {
-    padding: 10%;
+    width: 80%;
+    margin: 10% auto;
+   
+}
+.profile-card-container {
+    width: 50%;
+    margin: 0% auto;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#portrait {
+    border-radius: 50%;
+    height: 160px;
+    width: 155px;
+    margin-right: 2%;
+}
+
+#banner{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+#banner>h1 {
+    font-size: 3em;
+    margin: 0;
+}
+#banner>h4 {
+    font-size:2em;
+     margin: 0;
+}
+
+.introduction-container {
+    border-top: 3px solid lightgray;
+    width: 50%;
+    margin: 3% auto;
+}
+icon-container {
     width: 50%;
     margin: 0 auto;
-
 }
-.pic-title-container {
-    display: flex;
-    direction: row;
-    justify-content: center;
-    padding: 1em;
-    margin-bottom: 2em;
-    border-bottom: 1px solid lightgrey;
-}
-#portrait {
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-}
-
-.banner-container {
-    margin: 0 2em;
-    padding-top: 1.2em;
-}
-
-.info-container {
-    text-align: left;
-    font-size: 1.3em;
-    line-height: 1.5rem;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-}
-.info-container>p {
-    text-align: left;
-}
-.icon-container {
-    margin: 0 auto;
-}
-.icon-container>ul {
-    margin: 1% auto;
+ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
-.icon-list {
-   margin: auto 0;
-    width: 20em;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+li {
+   font-size: 20px;
 }
-
+a {
+    color: black;
+}
+/*SLIDER CSS */
 .slideout-menu {
   position: fixed;
   top: 0;
@@ -93,7 +95,7 @@ h4 {
   z-index: 1;
   will-change: transform;
   background-color: #FFF; /* A background-color is required */
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 .slideout-open,
