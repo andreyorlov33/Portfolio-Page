@@ -1,0 +1,123 @@
+
+#burger {
+  float: right;
+}
+
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 2em;
+     margin: 0;
+}
+h4 {
+      font-size: 1.4em;
+      margin: 0;
+      color: grey;
+}
+.main-wrap {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+
+}
+.pic-title-container {
+    display: flex;
+    direction: row;
+    justify-content: center;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid lightgrey;
+}
+#portrait {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.banner-container {
+    margin: 0 2em;
+    padding-top: 1.2em;
+}
+
+.info-container {
+    text-align: left;
+    font-size: 1.3em;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.info-container>p {
+    text-align: left;
+}
+.icon-container {
+    margin: 0 auto;
+}
+.icon-container>ul {
+    margin: 1% auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icon-list {
+   margin: auto 0;
+    width: 20em;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+}
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #FFF; /* A background-color is required */
+  min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+.panel:before {
+  content: '';
+  display: block;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.panel-open:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,.5);
+  z-index: 99;
+}
