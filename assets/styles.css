@@ -1,137 +1,312 @@
+/*
+colors: #FF00C8
+@media (min-width: 1024px)  {}
+@media (min-width: 768px) and (max-width: 1023px){}
+@media (max-width: 767px){}
+*/
 
-body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-
-#menu {
-    border-left: 2px solid grey;
-    background-color: PINK;
-}
-.menu-wrap {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 5vh;
-}
-.menu-wrap> ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-.menu-li-page-links,
-.menu-li-contact-links {
-    margin: 1vh 0 1vh 0; 
-}
-.main{
-    width: 99%;
-}
-#burger {
-  float: right;
-  position: fixed;
-  top: -10%; 
-  right: 12%;
-  background: none;
-  border: none;
-  font-size: 2em;
-}
-
-.main-wrap {
-    width: 80%;
-    margin: 10% auto;
-   
-}
-.profile-card-container {
-    width: 50%;
-    margin: 0% auto;
-    margin-bottom: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-}
-
-#portrait {
-    border-radius: 50%;
-    height: 160px;
-    width: 155px;
-    margin-right: 2%;
-}
-
-#banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    vertical-align: middle;
-    text-align: center;
+@media (min-width: 1024px)  {
     
-}
-#banner>h1 {
-    font-size: 3em;
-    margin: 0;
-}
-#banner>h4 {
-    font-size:2em;
-     margin: 0;
+    body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    .hidden {
+        display: none;
+    }
+    #menu {
+  
+        border-left: 2px solid grey;
+        background-color: #FF00C8;
+    }
+    .menu-wrap {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5vh;
+    }
+    .menu-wrap> ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-li-page-links,
+    .menu-li-contact-links {
+        margin: 1vh 0 1vh 0; 
+    }
+    .main{
+        width: 99%;
+    }
+    #burger {
+        float: right;
+        position: fixed;
+        top: -10%; 
+        right: 12%;
+        background: none;
+        border: none;
+        font-size: 2em;
+    }
+
+    .main-wrap {
+        width: 80%;
+        margin: 10% auto;
+    
+    }
+    .profile-card-container {
+        width: 50%;
+        margin: 0% auto;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    #portrait {
+        border-radius: 50%;
+        height: 160px;
+        width: 155px;
+        margin-right: 2%;
+    }
+
+    #banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        vertical-align: middle;
+        text-align: center;
+        
+    }
+    #banner>h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+    #banner>h4 {
+        font-size:2em;
+        margin: 0;
+    }
+
+    .introduction-container {
+        border-top: 3px solid lightgray;
+        width: 50%;
+        margin: 3% auto;
+        font-size: 2.0rem;
+        line-height: 3.0rem;
+    }
+
+    .introduction-container>p {
+        padding-left: 1em;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .icon-li>a:hover {
+        color: #FF00C8;
+    }
+    li {
+        font-size: 1.9rem;
+        line-height: 1.9rem;
+    }
+
+    a {
+        color: black;
+    }
+    /*SLIDER CSS */
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 256px;
+        min-height: 100vh;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        z-index: 0;
+        display: none;
+    }
+
+    .slideout-menu-left {
+         left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        will-change: transform;
+        background-color: #FFF; /* A background-color is required */
+        min-height: 100vh;
+    }
+
+    .slideout-open,
+    .slideout-open body,
+    .slideout-open .slideout-panel {
+         overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
 }
 
-.introduction-container {
-    border-top: 3px solid lightgray;
-    width: 50%;
-    margin: 3% auto;
-}
-icon-container {
-    width: 50%;
-    margin: 0 auto;
-}
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-li {
-   font-size: 20px;
-}
-a {
-    color: black;
-}
-/*SLIDER CSS */
-.slideout-menu {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 256px;
-  min-height: 100vh;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  z-index: 0;
-  display: none;
-}
+@media (min-width: 768px) and (max-width: 1023px){
+        body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    .hidden {
+        display: none;
+    }
+    #menu {
+        border-left: 2px solid grey;
+        background-color: #FF00C8;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+    }
+    .menu-wrap {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5vh;
+    }
+    .menu-wrap> ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-li-page-links,
+    .menu-li-contact-links {
+        margin: 1vh 0 1vh 0; 
+    }
+    .main{
+        width: 99%;
+    }
+    #burger {
+        float: right;
+        position: fixed;
+        top: -10%; 
+        right: 12%;
+        background: none;
+        border: none;
+        font-size: 2em;
+    }
 
-.slideout-menu-left {
-  left: 0;
-}
+    .main-wrap {
+        width: 80%;
+        margin: 10% auto;
+    
+    }
+    .profile-card-container {
+        width: 50%;
+        margin: 0% auto;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.slideout-menu-right {
-  right: 0;
-}
+    #portrait {
+        margin: 0 auto;
+        border-radius: 50%;
+        height: 160px;
+        width: 155px;
+  
+    }
 
-.slideout-panel {
-  position: relative;
-  z-index: 1;
-  will-change: transform;
-  background-color: #FFF; /* A background-color is required */
-  min-height: 100vh;
-}
+    #banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        vertical-align: middle;
+        text-align: center;
+        
+    }
+    #banner>h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+    #banner>h4 {
+        font-size:2em;
+        margin: 0;
+    }
 
-.slideout-open,
-.slideout-open body,
-.slideout-open .slideout-panel {
-  overflow: hidden;
-}
+    .introduction-container {
+        border-top: 3px solid lightgray;
+        width: 50%;
+        margin: 3% auto;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+    .introduction-container>p {
+        padding-left: 1em;
+    }
 
-.slideout-open .slideout-menu {
-  display: block;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    li {
+    font-size: 20px;
+    }
+    a {
+        color: black;
+    }
+    /*SLIDER CSS */
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 256px;
+        min-height: 100vh;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        z-index: 0;
+        display: none;
+    }
+
+    .slideout-menu-left {
+        left: 0;
+    }
+
+    .slideout-menu-right {
+         right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        will-change: transform;
+        background-color: #FFF; /* A background-color is required */
+        min-height: 100vh;
+    }
+
+    .slideout-open,
+    .slideout-open body,
+    .slideout-open .slideout-panel {
+         overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
+
+
+
+
+
+
 }

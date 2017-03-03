@@ -1,3 +1,8 @@
+
+    $(document).ready(()=>{
+           $('#menu').removeClass('hidden')
+    })
+ 
  var slideout = new Slideout({
                 'panel': document.getElementById('panel'),
                 'menu': document.getElementById('menu'),
