@@ -5,23 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/main.css">
 	<title>Andrey Orlov</title>
 </head>
 
 <body>
-    
+    <!--Slide out menu-->
+    <aside id="menu" class='hidden'>
+        <div class="menu-wrap">
+            <ul class="mune-ul-pages">
+                <li class="menu-li-page-links">Home</li>
+                <li class="menu-li-page-links">About</li>
+                <li class="menu-li-page-links">Projects</li>
+            </ul>       
+
+            <ul class="menu-li-contact">
+                <li class="menu-li-contact-links">
+                    <a href="mailto:andreyorlov33@gmail.com">
+                    <i class="fa fa-envelope-o" aria-hidden="true"> Email</i>
+                    </a>
+                </li>
+                <li class="menu-li-contact-links">
+                    <a href="https://www.linkedin.com/in/andrey-orlov-611a3051/">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"> Linked In</i>
+                    </a>
+                </li>
+                <li class="menu-li-contact-links">
+                    <a href="https://github.com/andreyorlov33">
+                        <i class="fa fa-github" aria-hidden="true"> GitGub</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!--Main Page -->
     <section class="main" id="panel">
        <button id="burger" class="toggle-button">☰</button>  
         <div class="main-wrap">
             <div class="profile-card-container">
-                <div id="portrait">
+                <div id="portrait" title="Andrey Orlov | Web Application Developer | Los Angeles, CA">
                       <img src="./assets/ao.jpg" alt="ao" id="portrait">
                 </div>
                 <div id="banner">
                     <h1>Andrey Orlov</h1>
-                    <h4>Software Developer</h4>
+                    <h2>Software Developer</h2>
                 </div>
             </div> 
             <!--PROFILE CARD END-->
@@ -29,7 +58,7 @@
                 <p class="introduction-paragraph">
                     Hi,  I  am a  web and software developer based in
                     Los Angeles, California.
-                    I work primaraly with JavaScript and NodeJs. 
+                    I work primaraly with <span id="js">JavaScript</span> and <span id="node">NodeJs</span>. 
 
                     Have a look through some of my recent projects here. Need help
                     with an upcoming project or application? Learn a bit more about me here.
@@ -61,33 +90,7 @@
         </div>
         <!--MAIN WRAP-->
     </section>
-    <nav id="menu" class='hidden'>
-        <div class="menu-wrap">
-            <ul class="mune-ul-pages">
-                <li class="menu-li-page-links">Home</li>
-                <li class="menu-li-page-links">About</li>
-                <li class="menu-li-page-links">Projects</li>
-            </ul>       
-
-            <ul class="menu-li-contact">
-                <li class="menu-li-contact-links">
-                    <a href="mailto:andreyorlov33@gmail.com">
-                    <i class="fa fa-envelope-o" aria-hidden="true"> Email</i>
-                    </a>
-                </li>
-                <li class="menu-li-contact-links">
-                    <a href="https://www.linkedin.com/in/andrey-orlov-611a3051/">
-                        <i class="fa fa-linkedin-square" aria-hidden="true"> Linked In</i>
-                    </a>
-                </li>
-                <li class="menu-li-contact-links">
-                    <a href="https://github.com/andreyorlov33">
-                        <i class="fa fa-github" aria-hidden="true"> GitGub</i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    
 </body>
 
 

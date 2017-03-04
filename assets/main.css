@@ -3,25 +3,31 @@ colors: #FF00C8
 @media (min-width: 1024px)  {}
 @media (min-width: 768px) and (max-width: 1023px){}
 @media (max-width: 767px){}
+
+fonts: 
 */
 
 @media (min-width: 1024px)  {
-    
+    html {
+            font-size: 77.5%;
+    }
     body {
+      font-family: 'Titillium Web', sans-serif;
         height: 100%;
         width: 100%;
-        margin: 0;
-        overflow: hidden;
+        margin: 0;    
+        overflow: hidden;    
     }
     .hidden {
         display: none;
     }
     #menu {
-  
+        overflow: hidden;
         border-left: 2px solid grey;
         background-color: #FF00C8;
     }
     .menu-wrap {
+        width: 60rem;
         height: 90vh;
         display: flex;
         flex-direction: column;
@@ -29,6 +35,7 @@ colors: #FF00C8
         margin-top: 5vh;
     }
     .menu-wrap> ul {
+        
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -38,7 +45,7 @@ colors: #FF00C8
         margin: 1vh 0 1vh 0; 
     }
     .main{
-        width: 99%;
+        width: 100%;
     }
     #burger {
         float: right;
@@ -68,7 +75,7 @@ colors: #FF00C8
         border-radius: 50%;
         height: 160px;
         width: 155px;
-        margin-right: 2%;
+        margin: 0 2% 0 2%;
     }
 
     #banner{
@@ -80,11 +87,11 @@ colors: #FF00C8
         
     }
     #banner>h1 {
-        font-size: 3em;
+        font-size: 3rem;
         margin: 0;
     }
-    #banner>h4 {
-        font-size:2em;
+    #banner>h2 {
+        font-size: 2.22rem;
         margin: 0;
     }
 
@@ -92,12 +99,16 @@ colors: #FF00C8
         border-top: 3px solid lightgray;
         width: 50%;
         margin: 3% auto;
-        font-size: 2.0rem;
-        line-height: 3.0rem;
+ 
     }
 
     .introduction-container>p {
         padding-left: 1em;
+        font-size: 2.0rem;
+    }
+
+    .icon-ul {
+         padding: 0;
     }
 
     ul {
@@ -111,11 +122,18 @@ colors: #FF00C8
     }
     li {
         font-size: 1.9rem;
-        line-height: 1.9rem;
     }
 
     a {
         color: black;
+    }
+    #js {
+        color: #FF00C8;
+       
+    }
+    #node{
+        color: #FF00C8;
+ 
     }
     /*SLIDER CSS */
     .slideout-menu {
@@ -158,22 +176,26 @@ colors: #FF00C8
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
-        body {
+    html {
+            font-size: 55.5%;
+    }
+    body {
+      font-family: 'Titillium Web', sans-serif;
         height: 100%;
         width: 100%;
-        margin: 0;
-        overflow: hidden;
+        margin: 0;    
+        overflow: hidden;    
     }
     .hidden {
         display: none;
     }
     #menu {
+        overflow: hidden;
         border-left: 2px solid grey;
         background-color: #FF00C8;
-        font-size: 1.8rem;
-        line-height: 1.8rem;
     }
     .menu-wrap {
+        width: 60rem;
         height: 90vh;
         display: flex;
         flex-direction: column;
@@ -181,6 +203,7 @@ colors: #FF00C8
         margin-top: 5vh;
     }
     .menu-wrap> ul {
+        
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -213,15 +236,14 @@ colors: #FF00C8
         margin-bottom: 2%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: left;
     }
 
     #portrait {
-        margin: 0 auto;
         border-radius: 50%;
         height: 160px;
         width: 155px;
-  
+       margin: 0 auto;
     }
 
     #banner{
@@ -233,11 +255,11 @@ colors: #FF00C8
         
     }
     #banner>h1 {
-        font-size: 3em;
+        font-size: 3rem;
         margin: 0;
     }
-    #banner>h4 {
-        font-size:2em;
+    #banner>h2 {
+        font-size: 2.22rem;
         margin: 0;
     }
 
@@ -245,11 +267,15 @@ colors: #FF00C8
         border-top: 3px solid lightgray;
         width: 50%;
         margin: 3% auto;
-        font-size: 1.6rem;
-        line-height: 2.2rem;
+ 
     }
+
     .introduction-container>p {
         padding-left: 1em;
+        font-size: 2.0rem;
+    }
+    .icon-ul {
+         padding: 0;
     }
 
     ul {
@@ -258,11 +284,23 @@ colors: #FF00C8
         flex-direction: row;
         justify-content: space-around;
     }
-    li {
-    font-size: 20px;
+    .icon-li>a:hover {
+        color: #FF00C8;
     }
+    li {
+        font-size: 1.9rem;
+    }
+
     a {
         color: black;
+    }
+    #js {
+        color: #FF00C8;
+       
+    }
+    #node{
+        color: #FF00C8;
+ 
     }
     /*SLIDER CSS */
     .slideout-menu {
@@ -278,11 +316,11 @@ colors: #FF00C8
     }
 
     .slideout-menu-left {
-        left: 0;
+         left: 0;
     }
 
     .slideout-menu-right {
-         right: 0;
+        right: 0;
     }
 
     .slideout-panel {
@@ -302,11 +340,169 @@ colors: #FF00C8
     .slideout-open .slideout-menu {
         display: block;
     }
+}
 
 
+@media (max-width: 768px){
+     html {
+            font-size: 55.5%;
+    }
+    body {
+      font-family: 'Titillium Web', sans-serif;
+        height: 100%;
+        width: 100%;
+        margin: 0;    
+        overflow: hidden;    
+    }
+    .hidden {
+        display: none;
+    }
+    #menu {
+        overflow: hidden;
+        border-left: 2px solid grey;
+        background-color: #FF00C8;
+    }
+    .menu-wrap {
+        width: 60rem;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5vh;
+    }
+    .menu-wrap> ul {
+        
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-li-page-links,
+    .menu-li-contact-links {
+        margin: 1vh 0 1vh 0; 
+    }
+    .main{
+        width: 99%;
+    }
+    #burger {
+        float: right;
+        position: fixed;
+        top: 0vh;
+        right: 5%;
+        background: none;
+        border: none;
+        font-size: 2em;
+    }
 
+    .main-wrap {
+        width: 80%;
+        margin: 10% auto;
+    
+    }
+    .profile-card-container {
+        margin: 0% auto;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    #portrait {
+        border-radius: 50%;
+        height: 160px;
+        width: 155px;
+        margin: 0 auto;
+    }
 
+    #banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        vertical-align: middle;
+        text-align: center;
+        
+    }
+    #banner>h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+    #banner>h2 {
+        font-size: 2.22rem;
+        margin: 0;
+    }
 
+    .introduction-container {
+        border-top: 3px solid lightgray;
+        margin: 3% auto;
+ 
+    }
 
+    .introduction-container>p {
+        padding-left: 1em;
+        font-size: 2.0rem;
+    }
+    .icon-ul {
+         padding: 0;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .icon-li>a:hover {
+        color: #FF00C8;
+    }
+    li {
+        font-size: 1.9rem;
+    }
+
+    a {
+        color: black;
+    }
+    #js {
+        color: #FF00C8;
+       
+    }
+    #node{
+        color: #FF00C8;
+ 
+    }
+    /*SLIDER CSS */
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 256px;
+        min-height: 100vh;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        z-index: 0;
+        display: none;
+    }
+
+    .slideout-menu-left {
+         left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        will-change: transform;
+        background-color: #FFF; /* A background-color is required */
+        min-height: 100vh;
+    }
+
+    .slideout-open,
+    .slideout-open body,
+    .slideout-open .slideout-panel {
+         overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
 }
