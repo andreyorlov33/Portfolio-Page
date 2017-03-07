@@ -7,7 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/project.css">
+    <link rel="stylesheet" href="./assets/css/project.css">
 	<title>Andrey Orlov</title>
 </head>
 
@@ -18,7 +18,6 @@
             <ul class="mune-ul-pages">
                 <li class="menu-li-page-links">Home</li>
                 <li class="menu-li-page-links">About</li>
-                <li class="menu-li-page-links">Projects</li>
             </ul>       
 
             <ul class="menu-li-contact">
@@ -47,7 +46,7 @@
              <header>
                 <div class="header-logo">
                     <div class="header-logo-portait" title="Andrey Orlov | Software Developer | Los Angeles, CA">
-                        <img src="./assets/ao.jpg" alt="ao" id="portrait">
+                        <img src="./assets/images/ao.jpg" alt="ao" id="portrait">
                     </div>
                 </div>
                 <div class="header-logo-text">
@@ -68,43 +67,48 @@
             <div class="content-container">
                 <!--project 1-->
                 <article class="project-card">
-                    <figure class="content-image">
-                        <a href=""></a>
-                    </figure>
+                        <h1 class="project-title">NBA Scores Almanac</h1>
+                        <div class="content-image" id='nba'>
+                             <a href="https://safe-cliffs-21610.herokuapp.com" target="_blank">
+                             <img class="project-image" src="./assets/images/nba.png" alt="">
+                             </a>
+                        </div>
+                 
                     <section class="project-description">
-                        <h1 class="project-title">
-                            Train-Bot
-                        </h1>
+                    
                         <p class="project-summary-text">
-                            Train-Bot is designed to aid personal trainers with scheduling, program and client tracking.<br>
-                            -Keep Track of Client progress, exersize lest and ect ...
+                           NBA Scores Almanac is a full stack app that allows you to scrape nba scores and <br>
+                           stats from any game on record. The app utilizes Node/Express server, MongoDb <br> and 
+                           Express Handlebars. 
                         </p>
                     </section>
                 </article>
                 <!--project 2-->
                 <article class="project-card">
-                    <figure class="content-image">
-                        <a href=""></a>
-                    </figure>
+                    <h1 class="project-title">Train-Bot</h1>
+                    <div class="content-image" id='nba'>
+                             <a href="https://safe-cliffs-21610.herokuapp.com" target="_blank">
+                             <img class="project-image" src="./assets/images/nba.png" alt="">
+                             </a>
+                    </div>
                     <section class="project-description">
-                        <h1 class="project-title">
-                            Train-Bot
-                        </h1>
+                      
                         <p class="project-summary-text">
                             Train-Bot is designed to aid personal trainers with scheduling, program and client tracking.<br>
-                            -Keep Track of Client progress, exersize lest and ect ...
+                            -Keep Track of Client progress, exersize lest and ect ...<br>
+                            Technologies used: Node/Express server, MySQL db, Express Handlebars
                         </p>
                     </section>
                 </article>
                 <!--project 3-->
                 <article class="project-card">
-                    <figure class="content-image">
-                        <a href=""></a>
-                    </figure>
+                      <h1 class="project-title">Train-Bot</h1>
+                      <div class="content-image" id='nba'>
+                             <a href="https://safe-cliffs-21610.herokuapp.com" target="_blank">
+                             <img class="project-image" src="./assets/images/nba.png" alt="">
+                             </a>
+                       </div>
                     <section class="project-description">
-                        <h1 class="project-title">
-                            Train-Bot
-                        </h1>
                         <p class="project-summary-text">
                             Train-Bot is designed to aid personal trainers with scheduling, program and client tracking.<br>
                             -Keep Track of Client progress, exersize lest and ect ...
@@ -151,6 +155,7 @@
 </body>
 
 
-      <script src="dist/slideout.min.js"></script>
-      <script src="./assets/app.js"></script>
+      
+      <script src="./javascript/slideout.min.js"></script>
+      <script src="./javascript/app.js"></script>
 </html>

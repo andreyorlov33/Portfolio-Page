@@ -1,12 +1,11 @@
 /*
-colors: #FF00C8
+colors: limegreen
 @media (min-width: 1024px)  {}
 @media (min-width: 768px) and (max-width: 1023px){}
 @media (max-width: 767px){}
 
 fonts: 
 */
-
 @media (min-width: 1024px)  {
     html {
             font-size: 77.5%;
@@ -15,8 +14,7 @@ fonts:
       font-family: 'Titillium Web', sans-serif;
         height: 100%;
         width: 100%;
-        margin: 0;    
-        overflow: hidden;    
+        margin: 0;        
     }
     .hidden {
         display: none;
@@ -24,7 +22,7 @@ fonts:
     #menu {
         overflow: hidden;
         border-left: 2px solid grey;
-        background-color: #FF00C8;
+        background-color: limegreen;
     }
     .menu-wrap {
         width: 60rem;
@@ -44,405 +42,114 @@ fonts:
     .menu-li-contact-links {
         margin: 1vh 0 1vh 0; 
     }
-    .main{
+    .main-wrap {
         width: 100%;
     }
     #burger {
         float: right;
         position: fixed;
-        top: -10%; 
-        right: 12%;
+        top: 0.2em;
+        right: .5em;
         background: none;
         border: none;
         font-size: 2em;
     }
-
-    .main-wrap {
-        width: 80%;
-        margin: 10% auto;
-    
-    }
-    .profile-card-container {
-        width: 50%;
-        margin: 0% auto;
-        margin-bottom: 2%;
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-    }
-
-    #portrait {
-        border-radius: 50%;
-        height: 160px;
-        width: 155px;
-        margin: 0 2% 0 2%;
-    }
-
-    #banner{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        vertical-align: middle;
-        text-align: center;
+ /*HEADER STYLE*/
+    .header-container {
+        margin-bottom: 7%;
         
     }
-    #banner>h1 {
-        font-size: 3rem;
-        margin: 0;
-    }
-    #banner>h2 {
-        font-size: 2.22rem;
-        margin: 0;
-    }
-
-    .introduction-container {
-        border-top: 3px solid lightgray;
-        width: 50%;
-        margin: 3% auto;
- 
-    }
-
-    .introduction-container>p {
-        padding-left: 1em;
-        font-size: 2.0rem;
-    }
-
-    .icon-ul {
-         padding: 0;
-    }
-
-    ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .icon-li>a:hover {
-        color: #FF00C8;
-    }
-    li {
-        font-size: 1.9rem;
-    }
-
-    a {
-        color: black;
-    }
-    #js {
-        color: #FF00C8;
-       
-    }
-    #node{
-        color: #FF00C8;
- 
-    }
-    /*SLIDER CSS */
-    .slideout-menu {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        width: 256px;
-        min-height: 100vh;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-        z-index: 0;
-        display: none;
-    }
-
-    .slideout-menu-left {
-         left: 0;
-    }
-
-    .slideout-menu-right {
-        right: 0;
-    }
-
-    .slideout-panel {
-        position: relative;
-        z-index: 1;
-        will-change: transform;
-        background-color: #FFF; /* A background-color is required */
-        min-height: 100vh;
-    }
-
-    .slideout-open,
-    .slideout-open body,
-    .slideout-open .slideout-panel {
-         overflow: hidden;
-    }
-
-    .slideout-open .slideout-menu {
-        display: block;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1023px){
-    html {
-            font-size: 55.5%;
-    }
-    body {
-      font-family: 'Titillium Web', sans-serif;
-        height: 100%;
+    header {
         width: 100%;
-        margin: 0;    
-        overflow: hidden;    
-    }
-    .hidden {
-        display: none;
-    }
-    #menu {
-        overflow: hidden;
-        border-left: 2px solid grey;
-        background-color: #FF00C8;
-    }
-    .menu-wrap {
-        width: 60rem;
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 5vh;
-    }
-    .menu-wrap> ul {
-        
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-    }
-    .menu-li-page-links,
-    .menu-li-contact-links {
-        margin: 1vh 0 1vh 0; 
-    }
-    .main{
-        width: 99%;
-    }
-    #burger {
-        float: right;
-        position: fixed;
-        top: -10%; 
-        right: 12%;
-        background: none;
-        border: none;
-        font-size: 2em;
-    }
-
-    .main-wrap {
-        width: 80%;
-        margin: 10% auto;
-    
-    }
-    .profile-card-container {
-        width: 50%;
-        margin: 0% auto;
-        margin-bottom: 2%;
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-    }
-
-    #portrait {
-        border-radius: 50%;
-        height: 160px;
-        width: 155px;
-       margin: 0 auto;
-    }
-
-    #banner{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        vertical-align: middle;
-        text-align: center;
-        
-    }
-    #banner>h1 {
-        font-size: 3rem;
-        margin: 0;
-    }
-    #banner>h2 {
-        font-size: 2.22rem;
-        margin: 0;
-    }
-
-    .introduction-container {
-        border-top: 3px solid lightgray;
-        width: 50%;
-        margin: 3% auto;
- 
-    }
-
-    .introduction-container>p {
-        padding-left: 1em;
-        font-size: 2.0rem;
-    }
-    .icon-ul {
-         padding: 0;
-    }
-
-    ul {
-        list-style: none;
+        height: 8em;
+        padding-top: 2em;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
     }
-    .icon-li>a:hover {
-        color: #FF00C8;
+    .header-logo {
+        margin-left: 2em;
     }
-    li {
-        font-size: 1.9rem;
+    .header-logo-text {
+        margin-left: 1em;
     }
-
-    a {
-        color: black;
-    }
-    #js {
-        color: #FF00C8;
-       
-    }
-    #node{
-        color: #FF00C8;
- 
-    }
-    /*SLIDER CSS */
-    .slideout-menu {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        width: 256px;
-        min-height: 100vh;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-        z-index: 0;
-        display: none;
-    }
-
-    .slideout-menu-left {
-         left: 0;
-    }
-
-    .slideout-menu-right {
-        right: 0;
-    }
-
-    .slideout-panel {
-        position: relative;
-        z-index: 1;
-        will-change: transform;
-        background-color: #FFF; /* A background-color is required */
-        min-height: 100vh;
-    }
-
-    .slideout-open,
-    .slideout-open body,
-    .slideout-open .slideout-panel {
-         overflow: hidden;
-    }
-
-    .slideout-open .slideout-menu {
-        display: block;
-    }
-}
-
-
-@media (max-width: 768px){
-     html {
-            font-size: 55.5%;
-    }
-    body {
-      font-family: 'Titillium Web', sans-serif;
-        height: 100%;
-        width: 100%;
-        margin: 0;    
-        overflow: hidden;    
-    }
-    .hidden {
-        display: none;
-    }
-    #menu {
-        overflow: hidden;
-        border-left: 2px solid grey;
-        background-color: #FF00C8;
-    }
-    .menu-wrap {
-        width: 60rem;
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 5vh;
-    }
-    .menu-wrap> ul {
-        
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-    }
-    .menu-li-page-links,
-    .menu-li-contact-links {
-        margin: 1vh 0 1vh 0; 
-    }
-    .main{
-        width: 99%;
-    }
-    #burger {
-        float: right;
-        position: fixed;
-        top: 0vh;
-        right: 5%;
-        background: none;
-        border: none;
-        font-size: 2em;
-    }
-
-    .main-wrap {
-        width: 80%;
-        margin: 10% auto;
-    
-    }
-    .profile-card-container {
-        margin: 0% auto;
-        margin-bottom: 2%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     #portrait {
         border-radius: 50%;
-        height: 160px;
-        width: 155px;
+        height: 7em;
+        width: 7em;
+    }
+ /*HEADER STYLE END*/
+    .main-wrap {
+        width: 80%;
+        margin: 0 auto;
+    
+    }
+   /*Project Card */
+   .project-card {
+        padding: 2vh 2vw 2vh 2vw;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        border: 2px double;
+   }
+
+    .content-container {
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-image-container {
+        border: 1px  solid black; 
+        height: 20em;
+        width: 100%;
+        margin: 0;
+    }
+    .project-image {
+        width: 100%;  
+    }
+
+    .project-title {
+         font-size: 3rem;
+         margin: .5em;
+    }
+    .project-description {
+        font-size: 2.3em;
+        margin: .5em;
+    }
+    
+
+    /*footer*/
+    footer {
+        width: 80%;
+        border-top: 2px solid lightgrey;
+        display: flex;
+        flex-direction: column;
+        margin: 5% auto;
+        padding-top: 5em;
+    }
+    .icon-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer-text-wrap {
+        width: 80%;
         margin: 0 auto;
     }
 
-    #banner{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        vertical-align: middle;
-        text-align: center;
-        
-    }
-    #banner>h1 {
-        font-size: 3rem;
-        margin: 0;
-    }
-    #banner>h2 {
-        font-size: 2.22rem;
-        margin: 0;
+    .footer-title {
+        font-size: 2rem;
     }
 
-    .introduction-container {
-        border-top: 3px solid lightgray;
-        margin: 3% auto;
- 
+    .footer-text {
+        font-size: 1.5rem;
     }
-
-    .introduction-container>p {
-        padding-left: 1em;
-        font-size: 2.0rem;
-    }
+    /*list styles*/
     .icon-ul {
-         padding: 0;
+         display: flex;
+        padding: 0;
+        justify-content: space-between;
+
     }
+
     ul {
         list-style: none;
         display: flex;
@@ -450,7 +157,7 @@ fonts:
         justify-content: space-around;
     }
     .icon-li>a:hover {
-        color: #FF00C8;
+        color: limegreen;
     }
     li {
         font-size: 1.9rem;
@@ -459,14 +166,7 @@ fonts:
     a {
         color: black;
     }
-    #js {
-        color: #FF00C8;
-       
-    }
-    #node{
-        color: #FF00C8;
- 
-    }
+
     /*SLIDER CSS */
     .slideout-menu {
         position: fixed;
@@ -505,4 +205,428 @@ fonts:
     .slideout-open .slideout-menu {
         display: block;
     }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+    html {
+            font-size: 70%;
+    }
+    body {
+      font-family: 'Titillium Web', sans-serif;
+        height: 100%;
+        width: 100%;
+        margin: 0;        
+    }
+    .hidden {
+        display: none;
+    }
+    #menu {
+        overflow: hidden;
+        border-left: 2px solid grey;
+        background-color: limegreen;
+    }
+    .menu-wrap {
+        width: 60rem;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5vh;
+    }
+    .menu-wrap> ul {
+        
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-li-page-links,
+    .menu-li-contact-links {
+        margin: 1vh 0 1vh 0; 
+    }
+    .main{
+        width: 100%;
+    }
+    #burger {
+        float: right;
+        position: fixed;
+        top: 0.2em;
+        right: .5em;
+        background: none;
+        border: none;
+        font-size: 2em;
+    }
+ /*HEADER STYLE*/
+    .header-container {
+        margin-bottom: 7%;
+        
+    }
+    header {
+        width: 100%;
+        height: 8em;
+        padding-top: 2em;
+        display: flex;
+        flex-direction: row;
+    }
+    .header-logo {
+        margin-left: 2em;
+    }
+    .header-logo-name {
+        margin-bottom: 0px;
+    }
+    .header-logo-title{
+        margin-top: 0;
+    }
+    .header-logo-text {
+        margin-top: 0px;
+        margin-left: 1em;
+    }
+    #portrait {
+        border-radius: 50%;
+        height: 7em;
+        width: 7em;
+    }
+ /*HEADER STYLE END*/
+    .main-wrap {
+        width: 80%;
+        margin: 0 auto;
+    
+    }
+   /*Project Card */
+   .project-card {
+        padding: 2vh 2vw 2vh 2vw;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        border: 2px double;
+   }
+
+    .content-container {
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-image-container {
+        border: 1px  solid black; 
+        height: 20em;
+        width: 100%;
+        margin: 0;
+    }
+    .project-image {
+        width: 100%;  
+    }
+
+    .project-title {
+         font-size: 3rem;
+         margin: .5em;
+    }
+    .project-description {
+        font-size: 2.3em;
+        margin: .5em;
+    }
+    
+
+    /*footer*/
+    footer {
+        width: 80%;
+        border-top: 2px solid lightgrey;
+        display: flex;
+        flex-direction: column;
+        margin: 5% auto;
+        padding-top: 5em;
+    }
+    .icon-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer-text-wrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footer-title {
+        font-size: 2rem;
+    }
+
+    .footer-text {
+        font-size: 1.5rem;
+    }
+    /*list styles*/
+    .icon-ul {
+         display: flex;
+        padding: 0;
+        justify-content: space-between;
+
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .icon-li>a:hover {
+        color: limegreen;
+    }
+    li {
+        font-size: 1.9rem;
+    }
+
+    a {
+        color: black;
+    }
+
+    /*SLIDER CSS */
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 256px;
+        min-height: 100vh;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        z-index: 0;
+        display: none;
+    }
+
+    .slideout-menu-left {
+         left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        will-change: transform;
+        background-color: #FFF; /* A background-color is required */
+        min-height: 100vh;
+    }
+
+    .slideout-open,
+    .slideout-open body,
+    .slideout-open .slideout-panel {
+         overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
+
+
+}
+
+
+@media (max-width: 767px){
+     html {
+            font-size: 50%;
+    }
+    body {
+      font-family: 'Titillium Web', sans-serif;
+        height: 100%;
+        width: 100%;
+        margin: 0;        
+    }
+    .hidden {
+        display: none;
+    }
+    #menu {
+        overflow: hidden;
+        border-left: 2px solid grey;
+        background-color: limegreen;
+    }
+    .menu-wrap {
+        width: 60rem;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5vh;
+    }
+    .menu-wrap> ul {
+        
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-li-page-links,
+    .menu-li-contact-links {
+        margin: 1vh 0 1vh 0; 
+    }
+    .main{
+        width: 100%;
+    }
+    #burger {
+        float: right;
+        position: fixed;
+        top: 0.2em;
+        right: .5em;
+        background: none;
+        border: none;
+        font-size: 2em;
+    }
+ /*HEADER STYLE*/
+    .header-container {
+        margin-bottom: 7%;
+        
+    }
+    header {
+        width: 100%;
+        height: 8em;
+        padding-top: 2em;
+        display: flex;
+        flex-direction: row;
+    }
+    .header-logo {
+        margin-left: 2em;
+    }
+    .header-logo-name {
+        margin-bottom: 0px;
+    }
+    .header-logo-title{
+        margin-top: 0;
+    }
+    .header-logo-text {
+        margin-top: 0px;
+        margin-left: 1em;
+    }
+    #portrait {
+        border-radius: 50%;
+        height: 7em;
+        width: 7em;
+    }
+ /*HEADER STYLE END*/
+    .main-wrap {
+        width: 100%;
+        margin: 0 auto;
+    
+    }
+   /*Project Card */
+   .project-card {
+        padding: 2vh 2vw 2vh 2vw;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        border: 2px double;
+   }
+
+    .content-container {
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-image-container {
+        border: 1px  solid black; 
+        height: 20em;
+        width: 100%;
+        margin: 0;
+    }
+    .project-image {
+        width: 100%;  
+    }
+
+    .project-title {
+         font-size: 3rem;
+         margin: .5em;
+    }
+    .project-description {
+        font-size: 2.3em;
+        margin: .5em;
+    }
+    
+
+    /*footer*/
+    footer {
+        width: 80%;
+        border-top: 2px solid lightgrey;
+        display: flex;
+        flex-direction: column;
+        margin: 5% auto;
+        padding-top: 5em;
+    }
+    .icon-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer-text-wrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footer-title {
+        font-size: 2rem;
+    }
+
+    .footer-text {
+        font-size: 1.5rem;
+    }
+    /*list styles*/
+    .icon-ul {
+         display: flex;
+        padding: 0;
+        justify-content: space-between;
+
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .icon-li>a:hover {
+        color: limegreen;
+    }
+    li {
+        font-size: 1.9rem;
+    }
+
+    a {
+        color: black;
+    }
+
+    /*SLIDER CSS */
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 256px;
+        min-height: 100vh;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        z-index: 0;
+        display: none;
+    }
+
+    .slideout-menu-left {
+         left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        will-change: transform;
+        background-color: #FFF; /* A background-color is required */
+        min-height: 100vh;
+    }
+
+    .slideout-open,
+    .slideout-open body,
+    .slideout-open .slideout-panel {
+         overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
 }
