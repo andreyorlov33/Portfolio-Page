@@ -1,6 +1,17 @@
 
     $(document).ready(()=>{
-           $('#menu').removeClass('hidden')
+           $('#menu').removeClass('hidden');
+           $('body').fadeIn(1000);
+    
+           $('.link').click((e)=>{
+                e.preventDefault();
+                newLocation = e.target.href;
+                $('body').fadeOut(1000, newpage);  
+             })
+
+             function newpage() {
+             window.location = newLocation;
+            }
     })
  
  var slideout = new Slideout({

@@ -11,15 +11,14 @@
 	<title>Andrey Orlov</title>
 </head>
 
-<body>
-    <button id="burger" class="toggle-button">☰</button>  
+<body class='hidden'>
+      <button id="burger" class="toggle-button">☰</button>  
     <!--Slide out menu-->
     <aside id="menu" class='hidden'>
         <div class="menu-wrap">
             <ul class="mune-ul-pages">
-                <li class="menu-li-page-links">Home</li>
-                <li class="menu-li-page-links">About</li>
-                <a href="/projects"><li class="menu-li-page-links">Projects</li></a>
+               <li class="menu-li-page-links"> <a class='link' href="/about">About</a></li>
+                <li class="menu-li-page-links"><a class='link' href="/projects">Projects</a></li>
             </ul>       
 
             <ul class="menu-li-contact">
@@ -43,7 +42,7 @@
     </aside>
     <!--Main Page -->
     <section class="main" id="panel">
-    
+     
         <div class="main-wrap">
             <div class="profile-card-container">
                 <div id="portrait" title="Andrey Orlov | Web Application Developer | Los Angeles, CA">

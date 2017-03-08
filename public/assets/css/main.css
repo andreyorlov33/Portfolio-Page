@@ -1,5 +1,5 @@
 /*
-colors: limegreen
+colors: #00e000
 @media (min-width: 1024px)  {}
 @media (min-width: 768px) and (max-width: 1023px){}
 @media (max-width: 767px){}
@@ -24,7 +24,6 @@ fonts:
     #menu {
         overflow: hidden;
         border-left: 2px solid grey;
-        background-color: limegreen;
     }
     .menu-wrap {
         width: 60rem;
@@ -33,6 +32,7 @@ fonts:
         flex-direction: column;
         justify-content: space-between;
         margin-top: 5vh;
+        border-left: 2px double grey;
     }
     .menu-wrap> ul {
         
@@ -48,6 +48,7 @@ fonts:
         width: 100%;
     }
     #burger {
+        z-index: 0;
         float: right;
         position: fixed;
         top: 2em; 
@@ -99,6 +100,7 @@ fonts:
         border-top: 3px solid lightgray;
         width: 50%;
         margin: 3% auto;
+    
  
     }
 
@@ -118,21 +120,22 @@ fonts:
         justify-content: space-around;
     }
     .icon-li>a:hover {
-        color: limegreen;
+        color: #00e000;
     }
     li {
         font-size: 1.9rem;
     }
 
     a {
+         text-decoration: none;
         color: black;
     }
     #js {
-        color: limegreen;
+        color: #00e000;
        
     }
     #node{
-        color: limegreen;
+        color: #00e000;
  
     }
     /*SLIDER CSS */
@@ -144,7 +147,7 @@ fonts:
         min-height: 100vh;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
-        z-index: 0;
+        z-index: 10;
         display: none;
     }
 
@@ -192,7 +195,6 @@ fonts:
     #menu {
         overflow: hidden;
         border-left: 2px solid grey;
-        background-color: limegreen;
     }
     .menu-wrap {
         width: 60rem;
@@ -201,6 +203,7 @@ fonts:
         flex-direction: column;
         justify-content: space-between;
         margin-top: 5vh;
+        border-left: 2px double grey;
     }
     .menu-wrap> ul {
         
@@ -285,21 +288,22 @@ fonts:
         justify-content: space-around;
     }
     .icon-li>a:hover {
-        color: limegreen;
+        color: #00e000;
     }
     li {
         font-size: 1.9rem;
     }
 
     a {
+         text-decoration: none;
         color: black;
     }
     #js {
-        color: limegreen;
+        color: #00e000;
        
     }
     #node{
-        color: limegreen;
+        color: #00e000;
  
     }
     /*SLIDER CSS */
@@ -360,7 +364,7 @@ fonts:
     #menu {
         overflow: hidden;
         border-left: 2px solid grey;
-        background-color: limegreen;
+        
     }
     .menu-wrap {
         width: 60rem;
@@ -369,6 +373,7 @@ fonts:
         flex-direction: column;
         justify-content: space-between;
         margin-top: 5vh;
+        border-left: 2px double grey;
     }
     .menu-wrap> ul {
         
@@ -451,21 +456,22 @@ fonts:
         justify-content: space-around;
     }
     .icon-li>a:hover {
-        color: limegreen;
+        color: #00e000;
     }
     li {
         font-size: 1.9rem;
     }
 
     a {
+         text-decoration: none;
         color: black;
     }
     #js {
-        color: limegreen;
+        color: #00e000;
        
     }
     #node{
-        color: limegreen;
+        color: #00e000;
  
     }
     /*SLIDER CSS */
