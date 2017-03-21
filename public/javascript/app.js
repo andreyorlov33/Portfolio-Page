@@ -1,6 +1,6 @@
 
     $(document).ready(()=>{
-           $('#menu').removeClass('hidden');
+           $('#menu').addClass('hidden');
            $('body').fadeIn(1000);
     
            $('.link').click((e)=>{
@@ -12,35 +12,20 @@
              function newpage() {
              window.location = newLocation;
             }
-    })
- 
- var slideout = new Slideout({
-                'panel': document.getElementById('panel'),
-                'menu': document.getElementById('menu'),
-                'side': 'right',
-                'padding': 256,
-                'tolerance': 70
+
+            $('.fa-times').click(()=>{
+                $('#menu').fadeOut(1);
+                $('#burger').fadeIn(1000);
             });
 
-            document.querySelector('.toggle-button').addEventListener('click', function() {
-                slideout.toggle();
+            
+            $('#burger').click(()=>{
+                $('#menu').fadeIn(500);
+                $('#burger').fadeOut(1);
+            });
 
-            function close(eve) {
-                eve.preventDefault();
-                slideout.close();
-            }
 
-            slideout
-                .on('beforeopen', function() {
-                    this.panel.classList.add('panel-open');
-                })
-                .on('open', function() {
-                    this.panel.addEventListener('click', close);
-                })
-                .on('beforeclose', function() {
-                    this.panel.classList.remove('panel-open');
-                    this.panel.removeEventListener('click', close);
-                });
-        });
+    })
+ 
 
 

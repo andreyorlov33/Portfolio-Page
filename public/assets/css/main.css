@@ -21,21 +21,37 @@ fonts:
     .hidden {
         display: none;
     }
-    #menu {
-        overflow: hidden;
-        border-left: 2px solid grey;
+    .fa-times {
+        font-size: 20px;
+        margin: 1%;
+        position: absolute;
     }
+    .fa-times:hover {
+        cursor: pointer;
+    }
+
+    #menu {
+        left: 88%;
+        position: fixed;
+        width: 60rem;
+        overflow: hidden;
+        min-height: 100vh;
+        border-left: 2px solid gray;
+        background-color: white;
+    }
+
     .menu-wrap {
         width: 60rem;
-        height: 90vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 5vh;
-        border-left: 2px double grey;
-    }
-    .menu-wrap> ul {
+        border-left: 2px solid gray;
         
+    }
+
+    .menu-wrap> ul {
+        margin-top: 5vh;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -47,15 +63,20 @@ fonts:
     .main{
         width: 100%;
     }
+    .burger-container {
+        width: 100%;
+        border: 1px solid white;
+    }
+
     #burger {
-        z-index: 0;
         float: right;
         position: fixed;
-        top: 2em; 
-        right: 2em;
+        top: 0.2em;
+        right: .5em;
         background: none;
         border: none;
         font-size: 2em;
+        transition: all 1.5s ease-in-out;
     }
 
     .main-wrap {
@@ -134,7 +155,7 @@ fonts:
         color: #00e000;
        
     }
-    #node{
+    #node {
         color: #00e000;
  
     }
@@ -186,15 +207,28 @@ fonts:
       font-family: 'Titillium Web', sans-serif;
         height: 100%;
         width: 100%;
-        margin: 0;    
-        overflow: hidden;    
+        margin: 0;     
     }
     .hidden {
         display: none;
     }
+    .fa-times {
+        font-size: 20px;
+        margin: 1%;
+        transition: all 1.5s ease-in-out;
+        position: absolute;
+    }
+    .fa-times:hover {
+        cursor: pointer;
+    }
     #menu {
+        top: 0;
+        left: 80%;
+        position: fixed;
+        width: 60rem;
         overflow: hidden;
-        border-left: 2px solid grey;
+        border-left: 2px solid gray;
+        min-height: 100vh;
     }
     .menu-wrap {
         width: 60rem;
@@ -202,11 +236,9 @@ fonts:
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 5vh;
-        border-left: 2px double grey;
     }
     .menu-wrap> ul {
-        
+        margin-top: 5vh;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -216,13 +248,13 @@ fonts:
         margin: 1vh 0 1vh 0; 
     }
     .main{
-        width: 99%;
+        width: 100%;
     }
     #burger {
         float: right;
         position: fixed;
-        top: 2em; 
-        right: 2em;
+        top: 0.2em;
+        right: .5em;
         background: none;
         border: none;
         font-size: 2em;
@@ -356,27 +388,44 @@ fonts:
         height: 100%;
         width: 100%;
         margin: 0;    
-        overflow: hidden;    
+    
     }
     .hidden {
         display: none;
     }
-    #menu {
-        overflow: hidden;
-        border-left: 2px solid grey;
-        
+
+    .fa-times {
+        font-size: 20px;
+        margin: 1%;
+        position: absolute;
     }
+
+    .fa-times:hover {
+        cursor: pointer;
+    }
+
+    #menu {
+        top: 0;
+        left: 80%;
+        position: fixed;
+        min-width: 60rem;
+        overflow: hidden;
+        border-left: 2px solid gray;
+        min-height: 100vh;
+        background-color: white;
+    }
+
     .menu-wrap {
         width: 60rem;
         height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 5vh;
-        border-left: 2px double grey;
+      
     }
+
     .menu-wrap> ul {
-        
+        margin-top: 5vh;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -389,11 +438,10 @@ fonts:
         width: 99%;
     }
     #burger {
-        z-index: 10;
         float: right;
         position: fixed;
-        top: 2em;
-        right: 2em;
+        top: 0.2em;
+        right: .5em;
         background: none;
         border: none;
         font-size: 2em;
@@ -512,4 +560,46 @@ fonts:
     .slideout-open .slideout-menu {
         display: block;
     }
+}
+
+@media (max-width: 425px ){
+    #menu {
+        top: 0;
+        left: 65%;
+        position: fixed;
+        min-width: 70rem;
+        overflow: hidden;
+        border-left: 2px solid gray;
+        min-height: 100vh;
+        background-color: white;
+    }
+    
+}
+
+@media (max-width: 375px ){
+    #menu {
+        top: 0;
+        left: 60%;
+        position: fixed;
+        min-width: 70rem;
+        overflow: hidden;
+        border-left: 2px solid gray;
+        min-height: 100vh;
+        background-color: white;
+    }
+    
+}
+
+@media (max-width: 320px ){
+    #menu {
+        top: 0;
+        left: 55%;
+        position: fixed;
+        min-width: 70rem;
+        overflow: hidden;
+        border-left: 2px solid gray;
+        min-height: 100vh;
+        background-color: white;
+    }
+    
 }
