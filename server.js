@@ -19,6 +19,17 @@ app.get('/', (request,response)=>{
 app.get('/projects', (request,response)=>{
     response.sendFile(path.join(__dirname, `./public/projects.html`))
 })
+
+
+app.get('/about', (request,response)=>{
+    response.sendFile(path.join(__dirname, `./public/about.html`))
+})
+
+
+
+app.get('/resume', (request,response)=>{
+    response.sendFile(path.join(__dirname, `./public/resume.html`))
+})
 // Syncing our sequelize models and then starting our express app
 app.listen(PORT, ()=> {
     console.log(`App listening on PORT  ${PORT}`);
