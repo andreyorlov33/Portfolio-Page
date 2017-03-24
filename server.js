@@ -21,12 +21,6 @@ app.get('/projects', (request,response)=>{
 })
 
 
-app.get('/about', (request,response)=>{
-    response.sendFile(path.join(__dirname, `./public/about.html`))
-})
-
-
-
 app.get('/resume', (request,response)=>{
     response.sendFile(path.join(__dirname, `./public/resume.html`))
 })

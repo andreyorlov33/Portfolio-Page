@@ -99,6 +99,12 @@ fonts:
         margin: 0 auto;
     
     }
+
+    #project-intro {
+        margin: 0 auto;
+        font-size: 3.5em;
+    }
+
    /*Project Card */
    .project-card {
         padding: 2vh 2vw 2vh 2vw;
@@ -324,6 +330,11 @@ fonts:
         margin: 0 auto;
     
     }
+    #project-intro {
+        margin: 0 auto;
+        font-size: 3em;
+    }
+
    /*Project Card */
    .project-card {
         padding: 2vh 2vw 2vh 2vw;
@@ -553,6 +564,13 @@ fonts:
         margin: 0 auto;
     
     }
+
+    
+    #project-intro {
+        margin: 0 auto;
+        font-size: 2em;
+    }
+
    /*Project Card */
    .project-card {
         padding: 2vh 2vw 2vh 2vw;

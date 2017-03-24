@@ -7,6 +7,10 @@ colors: #00e000
 fonts: 
 */
 
+.fa-heart {
+    color: red;
+}
+
 @media (min-width: 1024px)  {
     html {
             font-size: 77.5%;
