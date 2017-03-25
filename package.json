@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-page",
+  "version": "1.0.0",
+  "description": "Personal portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "nodemailer": "^3.1.8",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreyorlov33/Portfolio-Page.git"
+  },
+  "author": "Andrey Orlov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreyorlov33/Portfolio-Page/issues"
+  },
+  "homepage": "https://github.com/andreyorlov33/Portfolio-Page#readme"
+}
