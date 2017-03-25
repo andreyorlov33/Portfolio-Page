@@ -1,6 +1,61 @@
+
 a:hover {
     color: #00e000;
 }
+
+
+#form-sign-up {
+    display: flex;
+    flex-direction: column;
+}
+#form-sign-up>span {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 1vh;
+    vertical-align: text-top;
+    flex-direction: row;
+    justify-content: center;
+}
+#form-sign-up>span>h1 {
+    display: inline-block;
+    width: 17%;
+    margin: 0 1vw;
+}
+
+#form-sign-up>span>input {
+    height: 2vh;
+    display: inline-block;
+    width: 60%;
+}
+#form-sign-up>span>textarea {
+
+    display: inline-block;
+    width: 60%;
+
+}
+
+#contactbtn {
+    min-width: 8vw;
+    background: none;
+    border-radius: 40%;
+    height: 4vh;
+    margin: 2vh auto;
+    border-style: outset;
+    outline: none;
+    border: 2px solid black;
+    font-weight: bold;
+}
+#contactbtn:hover {
+    cursor: pointer;
+    color:#00e000; 
+    border: 2px solid #00e000;
+}
+
+#message {
+    height: 10vh;
+}
+
 
 @media (min-width: 1024px)  {
     html {
@@ -26,6 +81,7 @@ a:hover {
     }
 
     #menu {
+        top: 0;
         left: 80%;
         position: fixed;
         width: 60rem;
@@ -95,47 +151,12 @@ a:hover {
         margin: 0 auto;
     
     }
-
-    #project-intro {
-        margin: 0 auto;
-        font-size: 3.5em;
-    }
-
-   /*Project Card */
-   .project-card {
-        padding: 2vh 2vw 2vh 2vw;
-        width: 60%;
-        height: auto;
-        margin: 0 auto;
-
-   }
-
     .content-container {
         margin-bottom: 10%;
         display: flex;
         flex-direction: column;
     }
-    .content-image-container {
-        border: 1px  solid black; 
-        height: 20em;
-        width: 100%;
-        margin: 0;
-    }
-    .project-image {
-        width: 100%;  
-    }
-
-    .project-title {
-         font-size: 3rem;
-         margin: .5em;
-    }
-    .project-description {
-        font-size: 2.3em;
-        margin: .5em;
-    }
-    
-
-    /*footer*/
+        /*footer*/
     footer {
         width: 80%;
         border-top: 2px solid lightgrey;
@@ -224,10 +245,9 @@ a:hover {
     .slideout-open .slideout-menu {
         display: block;
     }
-
+    
 
 }
-
 
 @media (min-width: 768px) and (max-width: 1023px){
     html {
@@ -326,45 +346,14 @@ a:hover {
         margin: 0 auto;
     
     }
-    #project-intro {
-        margin: 0 auto;
-        font-size: 3em;
-    }
-
-   /*Project Card */
-   .project-card {
-        padding: 2vh 2vw 2vh 2vw;
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
-   }
 
     .content-container {
         margin-bottom: 10%;
         display: flex;
         flex-direction: column;
     }
-    .content-image-container {
-        border: 1px  solid black; 
-        height: 20em;
-        width: 100%;
-        margin: 0;
-    }
-    .project-image {
-        width: 100%;  
-    }
 
-    .project-title {
-         font-size: 3rem;
-         margin: .5em;
-    }
-    .project-description {
-        font-size: 2.3em;
-        margin: .5em;
-    }
-    
-
-    /*footer*/
+        /*footer*/
     footer {
         width: 80%;
         border-top: 2px solid lightgrey;
@@ -454,10 +443,7 @@ a:hover {
         display: block;
     }
 
-
-
 }
-
 
 @media (max-width: 767px){
      html {
@@ -562,46 +548,13 @@ a:hover {
     }
 
     
-    #project-intro {
-        margin: 0 auto;
-        font-size: 2em;
-    }
-
-   /*Project Card */
-   .project-card {
-        padding: 2vh 2vw 2vh 2vw;
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
-       
-   }
-
     .content-container {
         margin-bottom: 10%;
         display: flex;
         flex-direction: column;
     }
-    .content-image-container {
-        border: 1px  solid black; 
-        height: 20em;
-        width: 100%;
-        margin: 0;
-    }
-    .project-image {
-        width: 100%;  
-    }
 
-    .project-title {
-         font-size: 3rem;
-         margin: .5em;
-    }
-    .project-description {
-        font-size: 2.3em;
-        margin: .5em;
-    }
-    
-
-    /*footer*/
+     /*footer*/
     footer {
         width: 80%;
         border-top: 2px solid lightgrey;

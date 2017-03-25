@@ -1,16 +1,10 @@
-/*
-colors: #00e000
-@media (min-width: 1024px)  {}
-@media (min-width: 768px) and (max-width: 1023px){}
-@media (max-width: 767px){}
-
-fonts: 
-*/
 
 .fa-heart {
     color: red;
 }
-
+a:hover {
+    color: #00e000;
+}
 @media (min-width: 1024px)  {
     html {
             font-size: 77.5%;
@@ -155,14 +149,11 @@ fonts:
          text-decoration: none;
         color: black;
     }
-    #js {
+    .js {
         color: #00e000;
        
     }
-    #node {
-        color: #00e000;
- 
-    }
+  
     /*SLIDER CSS */
     .slideout-menu {
         position: fixed;
