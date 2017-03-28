@@ -6,6 +6,7 @@ const express = require("express"),
       bodyParser = require('body-parser'),
       fs = require('fs'),
       nodemailer = require('nodemailer'),
+      favicon = require('serve-favicon'),
       app = express(),
       PORT = process.env.PORT || 8080;
 
@@ -48,6 +49,7 @@ app.post('/mail', (req, res) => {
 
 // Static directory
 app.use(express.static("./public"));
+app.use(favicon(path.join(__dirname,'public/assets/images/icon.ico')));
 
 app.get('/', (request,response)=>{
     response.sendFile(path.join(__dirname, `./public/index.html`))
