@@ -325,11 +325,11 @@ a:hover {
          text-decoration: none;
         color: black;
     }
-    #js {
+    .js {
         color: #00e000;
        
     }
-    #node{
+    .node{
         color: #00e000;
  
     }
@@ -509,7 +509,7 @@ a:hover {
          text-decoration: none;
         color: black;
     }
-    #js {
+    .js {
         color: #00e000;
        
     }
