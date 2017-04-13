@@ -64,7 +64,7 @@ app.get('/contact', (request,response)=>{
 })
 
 app.get('/resume', (request,response)=>{
-    response.sendFile(path.join(__dirname, `./public/assets/images/resume.pdf`))
+    response.sendFile(path.join(__dirname, `./public/assets/images/AndreyOrlovResume.pdf`))
 })
 // Syncing our sequelize models and then starting our express app
 app.listen(PORT, ()=> {
