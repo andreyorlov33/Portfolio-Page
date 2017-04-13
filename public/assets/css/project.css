@@ -4,7 +4,7 @@ a:hover {
 
 @media (min-width: 1024px)  {
     html {
-            font-size: 77.5%;
+            font-size: 67.5%;
     }
     body {
       font-family: 'Titillium Web', sans-serif;
@@ -459,7 +459,7 @@ a:hover {
 }
 
 
-@media (max-width: 767px){
+@media (max-width: 768px){
      html {
             font-size: 50%;
     }
